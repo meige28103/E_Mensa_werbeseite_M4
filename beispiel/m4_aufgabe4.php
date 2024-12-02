@@ -8,7 +8,8 @@ ON gericht (name);
 ALTER TABLE gericht_hat_kategorie
 ADD CONSTRAINT fk_gericht_delete
 FOREIGN KEY (gericht_id)
-REFERENCES gericht(id)ON DELETE CASCADE;
+REFERENCES gericht(id)
+ON DELETE CASCADE;
 
 ALTER TABLE gericht_hat_allergen
 ADD CONSTRAINT fk_gericht_allergen_delete
@@ -19,7 +20,8 @@ ON DELETE CASCADE;
 ALTER TABLE gericht_hat_kategorie
 ADD CONSTRAINT fk_kategorie_delete
 FOREIGN KEY (kategorie_id)
-REFERENCES kategorie(id)ON DELETE RESTRICT;
+REFERENCES kategorie(id)
+ON DELETE RESTRICT;
 
 ALTER TABLE kategorie
 ADD CONSTRAINT kategorie_eltern_id
