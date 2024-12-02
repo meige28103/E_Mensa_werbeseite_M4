@@ -1,0 +1,1 @@
+Der Wert von name lautet: {{$request->query["name"]}}

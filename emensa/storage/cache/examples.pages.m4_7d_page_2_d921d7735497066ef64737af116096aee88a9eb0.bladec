@@ -1,0 +1,16 @@
+<?php $_shouldextend[1]=1; ?>
+
+<?php $this->startSection('title', 'Page 2'); ?>
+
+<?php $this->startSection('header'); ?>
+ <h1>PAGE 2</h1>
+<?php $this->stopSection(); ?>
+
+<?php $this->startSection('main'); ?>
+ <p>我是你爸！</p>
+<?php $this->stopSection(); ?>
+
+<?php $this->startSection('footer'); ?>
+ <p>page 2</p>
+<?php $this->stopSection(); ?>
+<?php if (isset($_shouldextend[1])) { echo $this->runChild("examples.layouts.m4_7d_layouts"); } ?>

@@ -1,0 +1,16 @@
+<?php $_shouldextend[1]=1; ?>
+
+<?php $this->startSection('title', 'Page 1'); ?>
+
+<?php $this->startSection('header'); ?>
+ <h1>PAGE 1</h1>
+<?php $this->stopSection(); ?>
+
+<?php $this->startSection('main'); ?>
+ <p>DBWT Praktikum真他妈的傻逼啊，做尼玛那么多废物玩意儿有几把什么用，纯鸡巴搞子！吃屎去吧！</p>
+<?php $this->stopSection(); ?>
+
+<?php $this->startSection('footer'); ?>
+ <p>page 1</p>
+<?php $this->stopSection(); ?>
+<?php if (isset($_shouldextend[1])) { echo $this->runChild("examples.layouts.m4_7d_layouts"); } ?>
